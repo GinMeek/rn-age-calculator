@@ -105,14 +105,14 @@ const Quotes = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setQuote(motivational_quotes[getRandomIndex(motivational_quotes)]);
-    }, 300000);
+    }, 120000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{quote}</Text>
+      <Text style={styles.text}>&ldquo;{quote}&rdquo;</Text>
     </View>
   );
 };

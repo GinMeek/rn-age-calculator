@@ -46,7 +46,7 @@ export default function Home() {
       <Stack.Screen
         options={{
           headerStyle: {
-            backgroundColor: COLORS.lightWhite,
+            backgroundColor: COLORS.white,
           },
           headerShadowVisible: false,
           headerTitle: "GamSavy - Age Calculator",
@@ -63,6 +63,7 @@ export default function Home() {
         refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
+        contentContainerStyle={{ flexGrow: 1, justifyContent: "center" }}
       >
         <View style={styles.container}>
           <HomeText user={welcomeText} />
@@ -74,7 +75,7 @@ export default function Home() {
             handlePress={() => handlePress()}
             handleEdit={() => setWelcomeText(renderFirstName(name))}
           />
-          <StatusBar style="auto" backgroundColor="#5f2109" />
+          <StatusBar style="auto" />
         </View>
       </ScrollView>
       <View style={styles.footerContainer}>
@@ -86,11 +87,11 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    margin: 2,
     padding: SIZES.xSmall,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: COLORS.lightWhite,
+    borderWidth: 3,
+    borderRadius: SIZES.xSmall,
   },
   footerContainer: {
     justifyContent: "center",

@@ -4,32 +4,13 @@ const birthdayWishes = [
   "Wishing you a birthday that's as special as you are. May your day be filled with love, laughter, and lots of cake!",
   "Happy birthday to someone who is beautiful inside and out. May your day be filled with all the things that make you happy!",
   "Wishing you a year filled with love, laughter, and lots of new experiences. Happy birthday to someone who is always up for an adventure!",
-  "May your birthday be filled with sunshine, rainbows, and lots of cake! Happy birthday to one of the coolest people I know!",
-  "Wishing you a day filled with love, laughter, and lots of hugs. Happy birthday to someone who is always there for me no matter what!",
   "May your birthday be filled with all the things that make you smile. Happy birthday to someone who is smart, funny, and just plain awesome!",
   "Wishing you a year filled with happiness, love, and lots of success. Happy birthday to someone who makes the world a better place just by being in it!",
-  "May your birthday be filled with all the things that make you happy. Happy birthday to someone who is always there to lend a helping hand!",
-  "Wishing you a day filled with love, laughter, and lots of fun. Happy birthday to someone who is always up for a good time!",
   "May your birthday be filled with love, laughter, and lots of cake. Happy birthday to someone who is kind, caring, and always there for others!",
-  "Wishing you a year filled with love, laughter, and lots of new opportunities. Happy birthday to someone who is always there to make me laugh!",
-  "May your birthday be filled with all the things that make you smile. Happy birthday to someone who is always there to listen and offer advice!",
-  "Wishing you a day filled with love, laughter, and lots of joy. Happy birthday to someone who is always there to lend an ear!",
   "May your birthday be filled with love, laughter, and lots of cake. Happy birthday to someone who is always up for a challenge!",
   "Wishing you a year filled with happiness, love, and lots of success. Happy birthday to someone who is always there to offer a helping hand!",
-  "May your birthday be filled with all the things that make you happy. Happy birthday to someone who is always there to make me smile!",
   "Wishing you a day filled with love, laughter, and lots of blessings. Happy birthday to someone who is always there to offer a shoulder to cry on!",
   "May your birthday be filled with love, laughter, and lots of cake. Happy birthday to someone who is always up for a good laugh!",
-  "Wishing you a year filled with love, laughter, and lots of new beginnings. Happy birthday to someone who is always there to make me happy!",
-  "May your birthday be filled with all the things that make you smile. Happy birthday to someone who is always there to offer a helping hand!",
-  "Wishing you a day filled with love, laughter, and lots of love. Happy birthday to someone who is always there to make me feel better!",
-  "May your birthday be filled with all the things that make you happy. Happy birthday to someone who is always there to make me laugh!",
-  "Wishing you a year filled with love, laughter, and lots of new adventures. Happy birthday to someone who is always there to lend an ear!",
-  "Wishing you a day filled with love, laughter, and lots of sunshine. Happy birthday to someone who is always there to offer a helping hand!",
-  "May your birthday be filled with all the things that make you smile. Happy birthday to someone who is always there to make me smile!",
-  "May your birthday be filled with all the things that make you happy. Happy birthday to someone who is always there to make me feel better!",
-  "Wishing you a day filled with love, laughter, and lots of love. Happy birthday to someone who is always there to make me laugh!",
-  "May your birthday be filled with all the things that make you happy. Happy birthday to someone who is always there to lend an ear!",
-  "Wishing you a year filled with love, laughter, and lots of new adventures. Happy birthday to someone who is always up for a challenge!",
   "Wishing you a day filled with joy and laughter!",
   "May your birthday be as bright and beautiful as you are!",
   "Here's to another year of incredible adventures!",
@@ -235,5 +216,5 @@ const birthdayWishes = [
 ];
 
 export default function useWish() {
-  return birthdayWishes[getRandomIndex];
+  return birthdayWishes[getRandomIndex(birthdayWishes)];
 }

@@ -1,7 +1,7 @@
-import { Text, View, SafeAreaView, ScrollView, StyleSheet } from "react-native";
+import { Text, View, SafeAreaView, ScrollView } from "react-native";
 import { Stack, useRouter, useGlobalSearchParams } from "expo-router";
 
-import { COLORS, FONT, icons, SIZES } from "../../constants";
+import { COLORS, FONT, icons } from "../../constants";
 import ScreenHeaderBtn from "../../components/header/ScreenHeaderBtn";
 import useDoB from "../../hooks/useDoB";
 import useWish from "../../hooks/useWish";
@@ -43,7 +43,10 @@ const Results = () => {
       ></Stack.Screen>
 
       <>
-        <ScrollView showsVerticalScrollIndicator={false} style={{ flex: 1 }}>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ flexGrow: 1, justifyContent: "center" }}
+        >
           <View style={styles.container}>
             {error ? (
               <View style={styles.errorContainer}>
@@ -68,25 +71,12 @@ const Results = () => {
           </View>
         </ScrollView>
 
-        <View style={footerStyles.container}>
+        <View style={styles.footer}>
           <Quotes />
         </View>
       </>
     </SafeAreaView>
   );
 };
-
-const footerStyles = StyleSheet.create({
-  container: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    paddingTop: SIZES.small,
-    backgroundColor: "#FFF",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
 
 export default Results;
