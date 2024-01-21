@@ -1,16 +1,16 @@
 {
   "expo": {
     "scheme": "ginmeek-gamsavy",
-    "name": "GamSavy - Age Calculator",
+    "name": "GamSavy",
     "slug": "gamsavy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/1701620707111.jpg",
+    "icon": "./assets/gamsavy_icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/1701620707125.jpg",
+      "image": "./assets/gamsavy_splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ccccff"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
@@ -18,8 +18,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/1701620707111.jpg",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/gamsavy_adaptive_icon.png",
+        "backgroundColor": "#ccccff"
       },
       "package": "com.ginmeek.gamsavy"
     },
